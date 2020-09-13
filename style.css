@@ -241,7 +241,7 @@ p {
 }
 
 .job_description {
-  margin: 0 16px;
+  margin: 8px 20px;
   text-align: left;
 }
 
@@ -256,6 +256,15 @@ p {
 
 .job_period {
   font-size: var(--font-micro);
+}
+
+.job_period a {
+  color: var(--color-pink);
+}
+
+.job_logo {
+  width: 180px;
+  height: 70px;
 }
 
 /* Skill */
@@ -422,7 +431,50 @@ p {
   background-color: var(--color-dark-white);
 }
 
-/* Testimonial */
+/* Education */
+#education {
+  background-color: var(--color-light-white);
+}
+
+.education {
+  margin: 40px;
+}
+
+.education {
+  display: flex;
+  margin: 32px 0;
+}
+
+.education_avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.education_avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.education_avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.education_speech-bubble {
+  padding: 18px;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.education_speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+.education_speech-bubble a {
+  color: var(--color-pink);
+}
+
+/*
+Testimonial
 #testimonials {
   background-color: var(--color-light-white);
 }
@@ -463,6 +515,7 @@ p {
 .testimonial_speech-bubble a {
   color: var(--color-pink);
 }
+*/
 
 /* Contact */
 #contact {
@@ -578,6 +631,27 @@ p {
     flex-grow: 1;
   }
 
+  .education {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education_avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .education_avatar:nth-child(even),
+  .education_avatar:nth-child(odd) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .education_speech-bubble {
+    order: 1;
+  }
+
+  /*
   .testimonials {
     flex-direction: column;
     align-items: center;
@@ -597,7 +671,7 @@ p {
   .testimonial_speech-bubble {
     order: 1;
   }
-
+  */
   .arrow-up {
     width: 50px;
     height: 50px;
