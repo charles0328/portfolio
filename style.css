@@ -263,8 +263,7 @@ p {
 }
 
 .job_logo {
-  width: 180px;
-  height: 70px;
+  width: 100%;
 }
 
 /* Skill */
