@@ -462,10 +462,12 @@ p {
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
+  text-align: left;
 }
 
 .education_speech-bubble p {
   color: var(--color-light-grey);
+  font-size: var(--font-small);
 }
 
 .education_speech-bubble a {
